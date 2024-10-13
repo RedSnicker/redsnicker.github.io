@@ -4,47 +4,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artin Pashaie - Past Works</title>
+  <title>RedSnicker - Past Works</title>
+  <style>
+    @import url('windi.css');
+    
+    body {
+      background: linear-gradient(to bottom, #1a1a1a, #101010, #050505);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .card {
+      background: rgba(32, 32, 32, 0.85);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    }
+
+    .title {
+      font-size: 3rem;
+      color: #34d399;
+      font-weight: 800;
+    }
+
+    .subtitle {
+      color: #9ca3af;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .link {
+      display: inline-block;
+      color: #34d399;
+      font-weight: 600;
+      margin-top: 1rem;
+      
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .link:hover {
+      color: #047857;
+    }
+  </style>
 </head>
 
-<style>
-    @import url(windi.css);
-</style>
-
-<body class="bg-gray-900 text-white">
-  <div class="container mx-auto p-6">
-    <div class="text-center mb-10">
-      <h1 class="text-4xl font-bold text-green-400">Artin Pashaie - Past Works</h1>
-      <p class="text-gray-400">A showcase of the projects and work I've been involved in.</p>
-      <a href="https://github.com/RedSnicker" class="text-green-400 hover:text-green-800 mt-4 block">My GitHub Page</a>
+<body>
+  <div class="container mx-auto p-8">
+    <div class="text-center mb-12">
+      <h1 class="title">RedSnicker - Past Works</h1>
+      <p class="subtitle">Showcasing the projects and work I've contributed to.</p>
+      <a href="https://github.com/RedSnicker" class="link bg-green-400">Visit My GitHub Page</a>
     </div>
 
-    <div class="flex flex-col space-y-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Card 1: Graphic Designing -->
-      <div class="bg-transparent p-6 rounded-lg shadow-lg border border-gray-700 transform transition-transform hover:scale-105 transition-">
-        <h2 class="text-2xl font-bold text-green-400">Graphic Designing</h2>
-        <p class="mt-4 text-gray-200">I created Minecraft renders for free for others as part of my graphic design work.</p>
+      <div class="card">
+        <h2 class="text-2xl font-bold text-green-400 mb-4">Graphic Designing</h2>
+        <p class="text-gray-300">Created Minecraft renders for free for others as part of my graphic design work.</p>
+        <a href="Nothing Over Here!" class="link bg-green-400">Learn More</a>
       </div>
 
       <!-- Card 2: Chest Solutions -->
-      <div class="bg-transparent p-6 rounded-lg shadow-lg border border-gray-700 transform transition-transform hover:scale-105">
-        <h2 class="text-2xl font-bold text-green-400">Chest Solutions</h2>
-        <p class="mt-4 text-gray-200">Co-founding Chest Solutions, a company focused on free and open-source Minecraft plugins.</p>
+      <div class="card">
+        <h2 class="text-2xl font-bold text-green-400 mb-4">Chest Solutions</h2>
+        <p class="text-gray-300">Co-founding Chest Solutions, focused on free and open-source Minecraft plugins.</p>
+        <a href="https://github.com/Chest-Solutions" class="link bg-green-400">Learn More</a>
       </div>
 
       <!-- Card 3: Arcane Network -->
-      <div class="bg-transparent p-6 rounded-lg shadow-lg border border-gray-700 transform transition-transform hover:scale-105">
-        <h2 class="text-2xl font-bold text-green-400">Arcane Network</h2>
-        <p class="mt-4 text-gray-200">Currently working on Arcane Network, a Minecraft server with custom game modes and experiences.</p>
+      <div class="card">
+        <h2 class="text-2xl font-bold text-green-400 mb-4">Arcane Network</h2>
+        <p class="text-gray-300">Currently working on Arcane Network, a Minecraft server with custom game modes.</p>
+        <a href="Nothing Here either" class="link bg-green-400">Private</a>
       </div>
 
-      <!-- Card 4: AI from Harvard -->
-      <div class="bg-transparent p-6 rounded-lg shadow-lg border border-gray-700 transform transition-transform hover:scale-105">
-        <h2 class="text-2xl font-bold text-green-400">Learning AI from Harvard</h2>
-        <p class="mt-4 text-gray-200">I am learning how to create AI in Python from a Harvard free AI course to build intelligent systems.</p>
+      <!-- Card 4: Rino AC -->
+      <div class="card">
+        <h2 class="text-2xl font-bold text-green-400 mb-4">Rino AC</h2>
+        <p class="text-gray-300">Developing a new Anti Cheat for minecraft named Rino AC with no falses based on Grim AC.</p>
+        <a href="https://github.com/Chest-Solutions/Rino-AC" class="link bg-green-400">Github Page</a>
       </div>
-    </div>
-  </div>
+
+      <!-- Card 5: Maze Finding AI -->
+      <div class="card">
+        <h2 class="text-2xl font-bold text-green-400 mb-4">Maze AI</h2>
+        <p class="text-gray-300">Developing a new Maze Solving AI, hopefully to turn it into a Self Driving Car.</p>
+        <a href="https://github.com/RedSnicker/Harvard-AI-Testing-Code" class="mt-6 bg-green-400 hover:bg-green-800 text-white px-6 py-2 rounded-lg transition duration-300">Github Page</a>
+      </div>
 </body>
 
 </html>

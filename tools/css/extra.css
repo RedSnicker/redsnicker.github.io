@@ -1,0 +1,55 @@
+body {
+    background-image: url('images/mount.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; /* Default text color */
+    font-family: 'Arial', sans-serif; /* Smooth font */
+    margin: 0; /* Reset default margin */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    text-align: center;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.692); /* Semi-transparent background */
+    padding: 40px 30px; /* Increased padding for a more spacious layout */
+    border-radius: 12px; /* Slightly increased border radius */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    max-width: 600px;
+    width: 100%; /* Responsive */
+    transition: transform 0.3s ease;
+}
+h1 {
+    font-size: 2.5rem; /* Larger font size for title */
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+}
+p {
+    font-size: 1.2rem; /* Increased font size for readability */
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+.button {
+    padding: 15px 30px; /* Adjusted button padding */
+    background-color: #ffd20c; /* Button color */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem; /* Font size for button text */
+    font-weight: bold; /* Bold button text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+    background-color: #ff9900; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem; /* Smaller font size for footer */
+    color: #ccc; /* Light grey for footer text */
+}

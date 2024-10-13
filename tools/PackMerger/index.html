@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Pack Merger</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Include SweetAlert2 here -->
+    <style>
+        @import url(css/windi.css);
+        @import url(css/extra.css);
+    </style>
+</head>
+<body id="body">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="card p-6 rounded-lg bg-gray-800 shadow-lg w-full max-w-lg text-center">
+            <h1 class="text-green-300 text-3xl mb-4">Minecraft Resource Pack Merger</h1>
+            <p class="text-green-400 mb-4">Created By RedSnicker</p>
+
+            <div id="dropArea" class="border-2 border-dashed border-green-500 rounded-lg p-8 cursor-pointer mb-4 transition hover:bg-green-800">
+                <p class="text-lg text-green-300">Drop your .zip files here or click to upload</p>
+                <input type="file" id="fileInput" multiple accept=".zip" class="hidden">
+            </div>
+
+            <!-- Progress Bar (hidden initially) -->
+            <div id="progressBarContainer" class="hidden w-full bg-green-900 h-4 rounded mb-4">
+                <div id="progressBar" class="h-full bg-green-500 rounded"></div>
+            </div>
+
+            <!-- Merge Button (initial) -->
+            <button id="mergeButton" class="bg-green-500 text-black py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition" disabled>Merge Resource Packs</button>
+
+            <!-- Download Link (hidden initially) -->
+            <a id="downloadLink" href="" download="generated.zip" class="hidden mt-4 bg-green-500 text-black py-2 px-4 rounded hover:bg-green-600 transition">Download Merged Pack</a>
+
+            <!-- Start Over Button (hidden initially) -->
+            <button onclick="location.reload()" id="startOverButton" class="hidden mt-4 bg-blue-600 text-black py-2 px-4 rounded hover:bg-blue-400 transition">Start Over</button>
+        </div>
+
+        <!-- Queue Card outside of the main card -->
+        <div id="queueCard" class="hidden mt-4 bg-gray-700 text-green-300 p-4 rounded-lg w-full max-w-lg">
+            <h3 class="text-green-400 text-lg mb-2">Packs Queue</h3>
+            <ul id="fileList" class="text-green-200 text-sm"></ul>
+        </div>
+    </div>
+
+    <script src="js/fit.js"></script>
+    <script src="js/merger.js"></script>
+</body>
+</html>
